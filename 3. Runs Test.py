@@ -24,8 +24,8 @@ def runstest(data):
         pvalue = math.erfc((float(abs(a))/(b)))
         print "P-value of the given sequence is : ",pvalue
         if pvalue > 0.01:
-            print "PASS"
+            return "PASS"
         else:
-            print "FAIL"
+            return "FAIL"
     else:
-        print "FAIL"
+        return "FAIL"
