@@ -22,7 +22,7 @@ def runstest(data):
         b = (2*math.sqrt(2*int(len(data)))*m*(1-m))
         print a,b
         pvalue = math.erfc((float(abs(a))/(b)))
-        print "P-value of the given sequence is : ",pvalue
+        print("P-value of the given sequence is : ",pvalue)
         if pvalue > 0.01:
             return "PASS"
         else:
